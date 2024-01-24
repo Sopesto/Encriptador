@@ -1,0 +1,143 @@
+body{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+img{
+  height: 2em;
+  border-radius: 10px;
+}
+
+header{
+  width: 100%;
+  height: 3em;
+  text-align: center;
+  background-color: #252525;
+  border-bottom: 1px solid #efefef;
+}
+
+.titulo{
+  padding-top: 10px;
+  font-size: 34px;
+  font-weight: 600;
+  color: #42e90f;
+}
+
+main{
+  height: 93vh;
+  width: auto;
+  background-color: #5add32e3;
+  display: block;
+}
+
+.campostexto, .botones{
+  padding: 10px 1% 10px 1%;
+  text-align: center;
+}
+
+.campostexto{
+  height: 85%;
+}
+
+.botones{
+  height: 10%;
+  padding-top: 15px;
+  height: fit-content;
+}
+
+#pregunta, #respuesta{
+  font-size: 20px;
+  width: 45%;
+  height: 100%;
+  resize: none;
+  border-radius: 5px;
+  vertical-align: middle;
+  padding: 5px;
+  box-shadow: 5px 5px 10px;
+}
+
+.botones button{
+  font-size: 15px;
+  height: 3em;
+  padding: 12px;
+  border: 0;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px;
+  transition: 0.4s;
+  vertical-align: middle;
+}
+
+#copiar img{
+  height: 1.2em;
+  padding: 0;
+  border-radius: 0px;
+}
+
+.info{
+  height: auto;
+  background-color: #252525;
+  text-align: center;
+}
+
+.autor{
+  font-weight: 500;
+  padding-top: 10px;
+  color: #efefef;
+}
+
+.redes{
+  display: inline-flex;
+}
+
+.redes li{
+  padding: 10px;
+}
+
+#encriptar:hover,#desencriptar:hover,#copiar:hover{
+  box-shadow: -1px -1px 3px #252525;
+  transform: scale(1.05);
+  background-color: #0f3bb4;
+  color: #efefef;
+}
+
+@media (max-width: 768px) {
+  main{
+    height: 105vh;
+  }
+  
+  .campostexto{
+    height: 70%;
+  }
+}
+
+@media (max-width: 430px) {
+  .titulo{
+    font-size: 24px;
+  }
+
+  .main{
+    height: 200px;
+  }
+
+  .campostexto{
+    display: block;
+    width: auto;
+    height: 65%;
+    padding-bottom: 2em;
+  }
+
+  .botones{
+    height: 10%;
+    padding-top: 15px;
+    height: fit-content;
+  }
+
+  #pregunta, #respuesta{
+    width: 90%;
+    height: 50%;
+    resize: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 5px;
+    box-shadow: 5px 5px 10px;
+  }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="estilo.css">
+  <script src="app.js"></script>
+</head>
+<body>
+  <header>
+    <h1 class="titulo">E¬cr1ptad@r d3 te#to</h1>
+  </header>
+  <main>
+    <div class="campostexto">
+      <textarea name="usuario" id="pregunta"  cols="auto" rows="auto" placeholder="Texto a encriptar..."></textarea>
+      <textarea name="pagina"  id="respuesta" cols="auto" rows="auto" readonly ></textarea>
+    </div>
+    <div class="botones">
+      <button onclick="encriptar"    type="button" id="encriptar">Encriptar</button>
+      <button onclick="desencriptar" type="button" id="desencriptar">Desencriptar</button>
+      <button onclick="copiar"       type="button" id="copiar"><img src="./imgs/copia.png" alt="copiar"></button>
+    </div>
+  </main>
+  <footer class="info">
+    <h6 class="autor">Lautaro Cáceres - Sopesto</h6>
+    <ul class="redes">
+      <li id="gh" ><a href="https://github.com/Sopesto"><img src="./imgs/github.png" alt="github"></a></li>
+      <li id="lin"><a href="https://www.linkedin.com/in/lautarocaceres/"><img src="./imgs/linkedin.png" alt="linkedin"></a></li>
+      <li id="ig" ><a href=""><img src="./imgs/instagram.png" alt="instagram"></a></li>
+    </ul>
+  </footer>
+</body>
+</html>
