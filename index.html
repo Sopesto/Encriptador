@@ -6,21 +6,20 @@
   <title>Encriptador</title>
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="estilo.css">
-  <script src="app.js"></script>
 </head>
 <body>
   <header>
-    <h1 class="titulo">E¬cr1ptad@r d3 te#to</h1>
+    <h1 class="titulo" id="t">E¬cr1ptad@r d3 te#to</h1>
   </header>
   <main>
     <div class="campostexto">
-      <textarea name="usuario" id="pregunta"  cols="auto" rows="auto" placeholder="Texto a encriptar..."></textarea>
+      <textarea oninput="nVCar();" name="usuario" id="pregunta"  cols="auto" rows="auto" placeholder="Escriba su texto aquí..."></textarea>
       <textarea name="pagina"  id="respuesta" cols="auto" rows="auto" readonly ></textarea>
     </div>
     <div class="botones">
-      <button onclick="encriptar"    type="button" id="encriptar">Encriptar</button>
-      <button onclick="desencriptar" type="button" id="desencriptar">Desencriptar</button>
-      <button onclick="copiar"       type="button" id="copiar"><img src="./imgs/copia.png" alt="copiar"></button>
+      <button onclick="encriptar(true);"    type="button" id="encriptar">Encriptar</button>
+      <button onclick="encriptar(false);" type="button" id="desencriptar">Desencriptar</button>
+      <button onclick="copiar();"       type="button" id="copiar"><img src="./imgs/copia.png" alt="copiar"></button>
     </div>
   </main>
   <footer class="info">
@@ -32,4 +31,5 @@
     </ul>
   </footer>
 </body>
+<script src="app.js"></script>
 </html>
